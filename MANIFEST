@@ -1,5 +1,7 @@
+Changes
 MANIFEST			This list of files
 Makefile.PL
+html/iTunes.html
 lib/iTunes.pm
 t/load.t
 t/pod.t
