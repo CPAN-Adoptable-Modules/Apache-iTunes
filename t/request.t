@@ -17,4 +17,4 @@ my $request = Apache::FakeRequest->new();
 isa_ok( $request, 'Apache::FakeRequest' );
 
 my $status = Apache::iTunes::handler( $request ); 
-is( $status, OK );
+is( $status, OK, "Returns OK status" );
