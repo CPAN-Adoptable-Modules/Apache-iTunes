@@ -1,3 +1,8 @@
 Apache::iTunes
 
+0.07 - Tue Sep  7 19:08:04 2004
+* cleaned up the distribution
+* I need to fix some things in Mac::iTunes to get this to work again
+* There is no need to upgrade, unless you enjoy pain and suffering
+
 0.05 - first release
