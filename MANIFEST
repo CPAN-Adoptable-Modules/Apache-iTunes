@@ -1,12 +1,14 @@
 Changes
-MANIFEST			This list of files
-Makefile.PL
 html/iTunes.html
 lib/iTunes.pm
+Makefile
+Makefile.PL
+MANIFEST
+META.yml
+README
 t/load.t
 t/pod.t
+t/pod_coverage.t
 t/prereq.t
 t/request.t
 t/test_manifest
-META.yml                                 Module meta-data (added by MakeMaker)
-README
