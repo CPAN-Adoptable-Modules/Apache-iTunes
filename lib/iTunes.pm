@@ -122,13 +122,23 @@ The location of the template file.
 when i get to the optimization stage, Mac::iTunes will get faster
 and so will this.
 
+=head1 SOURCE AVAILABILITY
+
+This source is part of a SourceForge project which always has the
+latest sources in CVS, as well as all of the previous releases.
+
+	http://sourceforge.net/projects/brian-d-foy/
+	
+If, for some reason, I disappear from the world, one of the other
+members of the project can shepherd this module appropriately.
+
 =head1 AUTHOR
 
-brian d foy, E<lt>bdfoy@cpan.orgE<gt>
+brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright 2002 brian d foy, All rights reserved
+Copyright 2002 -2004 brian d foy, All rights reserved
 
 =cut
 
