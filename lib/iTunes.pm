@@ -33,7 +33,7 @@ THIS IS ALPHA SOFTWARE.
 
 I am still developing Mac::iTunes, and this module depends
 mostly on that.  This handler does most of the stuff I need
-it to do, so further development depends on what people 
+it to do, so further development depends on what people
 ask for or contribute. :)
 
 =head2 URLs
@@ -128,7 +128,7 @@ This source is part of a SourceForge project which always has the
 latest sources in CVS, as well as all of the previous releases.
 
 	http://sourceforge.net/projects/brian-d-foy/
-	
+
 If, for some reason, I disappear from the world, one of the other
 members of the project can shepherd this module appropriately.
 
@@ -145,10 +145,10 @@ Copyright 2002 -2004 brian d foy, All rights reserved
 # share these among all mod_perl children and from
 # request to request
 use vars qw( $Playlist $Controller %Commands %Set $Volume );
-	
+
 $Playlist      = 'Library';
 $Controller    = Mac::iTunes->new()->controller;
-%Commands      = map { $_, 1 } 
+%Commands      = map { $_, 1 }
 	qw( play stop pause back_track next previous );
 %Set           = map { $_, 1 }
 	qw( playlist );
@@ -157,12 +157,12 @@ $Volume        = $Controller->volume;
 sub handler
 	{
 	my $r = shift;
-	
+
 	my( undef, $command, @path_info )= split m|/|, $r->path_info;
 	@path_info = map { unescape_uri( $_ ) } @path_info;
-		
+
 	my %params = $r->args;
-	
+
 	if( exists $Commands{ $command } )
 		{
 		$Controller->$command;
@@ -177,7 +177,7 @@ sub handler
 		{
 		my $number = int( $path_info[0] || 0 );
 		$path_info[1] = $Playlist unless $path_info[1];
-		my $Playlist = $path_info[1] 
+		my $Playlist = $path_info[1]
 			if $Controller->playlist_exists( $path_info[1] );
 		$Controller->play_track( $number, $Playlist );
 		}
@@ -187,9 +187,9 @@ sub handler
 		$volume = $volume > 100 ? 100 : $volume < 0 ? 0 : $volume;
 		$Volume = $Controller->volume( $volume );
 		}
-		
+
 	my %var;
-	
+
 	$var{version}   = $VERSION;
 	$var{base}      = $ENV{APACHE_ITUNES_URL};
 	$var{state}     = $Controller->player_state;
@@ -197,14 +197,14 @@ sub handler
 	$var{playlist}  = $Playlist;
 	$var{playlists} = $Controller->get_playlists;
 	$var{tracks}    = $Controller->get_track_names_in_playlist( $Playlist );
-	
-	my $html = Text::Template::fill_in_file( 
+
+	my $html = Text::Template::fill_in_file(
 		$ENV{APACHE_ITUNES_HTML}, HASH => \%var );
-	
+
 	$r->content_type( 'text/html' );
 	$r->send_http_header;
 	$r->print( $html );
 	return OK;
 	}
-	
+
 "See why 1984 won't be like 1984";
