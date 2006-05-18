@@ -1,5 +1,8 @@
 Apache::iTunes
 
+0.08 - Wed May 17 22:14:13 2006
+	* Updates to distro and kwalitee. No need to upgrade.
+
 0.07 - Tue Sep  7 19:08:04 2004
 * cleaned up the distribution
 * I need to fix some things in Mac::iTunes to get this to work again
