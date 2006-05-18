@@ -1,23 +1,11 @@
 # $Id$
 use ExtUtils::MakeMaker;
 
-eval "use Test::Manifest";
-
-unless( $@ )
-	{
-	*ExtUtils::MM_Any::test_via_harness = sub
-		{
-		my($self, $perl, $tests) = @_;
-	
-		return qq|\t$perl "-MTest::Manifest" | .
-			qq|"-e" "run_t_manifest(\$(TEST_VERBOSE), '\$(INST_LIB)', | .
-			qq|'\$(INST_ARCHLIB)')"\n|;
-		}
-	}
+eval "use Test::Manifest 1.13";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
-	'VERSION'       => '0.07',
+	'VERSION'       => '0.08',
 	
     'PM'            => {
 		'lib/iTunes.pm'       => '$(INST_LIBDIR)/iTunes.pm',
@@ -33,8 +21,8 @@ WriteMakefile(
 		},
 
 	'MAN3PODS'  => {
-			'lib/iTunes.pm' => '$(INST_MAN3DIR)/Apache::iTunes.3',
-			},
+		'lib/iTunes.pm' => '$(INST_MAN3DIR)/Apache::iTunes.3',
+		},
 
 	clean => { FILES => '*.bak Apache-*' },
 
