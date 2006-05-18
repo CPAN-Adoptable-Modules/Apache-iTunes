@@ -1,5 +1,8 @@
 Apache::iTunes
 
+0.09 - Wed May 17 22:22:22 2006
+	* updates to distro and kwalitee. No need to upgrade.
+
 
 0.07 - Tue Sep  7 19:08:04 2004
 * cleaned up the distribution
