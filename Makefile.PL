@@ -5,7 +5,7 @@ eval "use Test::Manifest 1.13";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
-	'VERSION'       => '0.08',
+	'VERSION'       => '0.09',
 	
     'PM'            => {
 		'lib/iTunes.pm'       => '$(INST_LIBDIR)/iTunes.pm',
