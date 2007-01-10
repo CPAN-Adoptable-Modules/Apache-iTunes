@@ -5,7 +5,7 @@ eval "use Test::Manifest 1.14";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
-	'VERSION'       => '0.09',
+	'VERSION'       => '0.10',
 	'LICENSE'       => 'perl',
 	
     'PM'            => {

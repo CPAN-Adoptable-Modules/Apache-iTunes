@@ -1,6 +1,7 @@
 Changes
 html/iTunes.html
 lib/iTunes.pm
+LICENSE
 Makefile.PL
 MANIFEST
 META.yml
