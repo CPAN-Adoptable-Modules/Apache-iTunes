@@ -1,5 +1,9 @@
 Apache::iTunes
 
+0.10 - Tue Jan  9 23:05:47 2007
+	* updated copyright and license info
+	* no code changes, so no need to upgrade
+
 0.09 - Wed May 17 22:22:22 2006
 	* updates to distro and kwalitee. No need to upgrade.
 
