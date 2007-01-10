@@ -1,11 +1,12 @@
 # $Id$
 use ExtUtils::MakeMaker;
 
-eval "use Test::Manifest 1.13";
+eval "use Test::Manifest 1.14";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
 	'VERSION'       => '0.09',
+	'LICENSE'       => 'perl',
 	
     'PM'            => {
 		'lib/iTunes.pm'       => '$(INST_LIBDIR)/iTunes.pm',
