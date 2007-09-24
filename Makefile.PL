@@ -7,6 +7,7 @@ WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
 	'VERSION'       => '0.10',
 	'LICENSE'       => 'perl',
+	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 	
     'PM'            => {
 		'lib/iTunes.pm'       => '$(INST_LIBDIR)/iTunes.pm',
