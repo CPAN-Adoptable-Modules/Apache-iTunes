@@ -5,7 +5,9 @@ eval "use Test::Manifest 1.14";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
-	'VERSION'       => '0.10',
+	'ABSTRACT'      => 'control iTunes from mod_perl',
+
+	'VERSION'       => '0.11',
 	'LICENSE'       => 'perl',
 	'AUTHOR'        => 'brian d foy <bdfoy@cpan.org>',
 	
@@ -20,6 +22,7 @@ WriteMakefile(
 		'Mac::iTunes'         => '0',
 		'Test::More'          => '0',
 		'Text::Template'      => '0',
+		'Test::Manifest'      => '1.14',
 		},
 
 	'MAN3PODS'  => {

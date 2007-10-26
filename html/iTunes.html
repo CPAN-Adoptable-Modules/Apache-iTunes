@@ -67,6 +67,7 @@ $str;
 	<td valign="top">
 		<table>
 			{
+			no warnings 'uninitialized';
 			my $str;
 			my $count = 0;
 			my $list = URI::Escape::uri_escape( $playlist );
