@@ -1,4 +1,3 @@
-# $Id$
 package Apache::iTunes;
 use strict;
 
@@ -9,7 +8,7 @@ use Apache::Util qw(unescape_uri);;
 use Mac::iTunes;
 use Text::Template;
 
-$VERSION = 0.09;
+$VERSION = 0.12;
 
 =head1 NAME
 
