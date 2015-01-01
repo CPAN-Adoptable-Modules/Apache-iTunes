@@ -30,6 +30,10 @@ Apache::iTunes - control iTunes from mod_perl
 
 THIS IS ALPHA SOFTWARE.
 
+This module is currently unmaintained. If you want to take over
+the care and feeding, write to modules@perl.org.
+
+
 I am still developing Mac::iTunes, and this module depends
 mostly on that.  This handler does most of the stuff I need
 it to do, so further development depends on what people
@@ -132,6 +136,9 @@ If, for some reason, I disappear from the world, one of the other
 members of the project can shepherd this module appropriately.
 
 =head1 AUTHOR
+
+This module is currently unmaintained. If you want to take over
+the care and feeding, write to modules@perl.org.
 
 brian d foy, C<< <bdfoy@cpan.org> >>
 
