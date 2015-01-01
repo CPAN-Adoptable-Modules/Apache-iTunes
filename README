@@ -16,11 +16,9 @@ perldoc directly on the module file.
 
 	perldoc lib/iTunes.pm
 	
-This module is also in CVS on SourceForge
-
-	http://sourceforge.net/projects/brian-d-foy/
+This module is in GitHub
 
 
 Enjoy, 
 
-brian d foy, bdfoy@cpan.org
+brian d foy, bdfoy@cpan.org	https://github.com/CPAN-Adopt-Me/apache-htaccess
