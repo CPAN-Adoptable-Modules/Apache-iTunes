@@ -1,7 +1,7 @@
 Changes
 examples/README
 html/iTunes.html
-lib/iTunes.pm
+lib/Apache/iTunes.pm
 LICENSE
 Makefile.PL
 MANIFEST
@@ -11,4 +11,3 @@ t/pod.t
 t/pod_coverage.t
 t/prereq.t
 t/request.t
-t/test_manifest
