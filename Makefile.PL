@@ -3,7 +3,6 @@ use ExtUtils::MakeMaker;
 
 require 5.006;
 
-eval "use Test::Manifest 1.14";
 	
 WriteMakefile(
 	'NAME'		    => 'Apache::iTunes',
@@ -24,7 +23,6 @@ WriteMakefile(
 		'Mac::iTunes'         => '0',
 		'Test::More'          => '0',
 		'Text::Template'      => '0',
-		'Test::Manifest'      => '1.14',
 		},
 
 	'MAN3PODS'  => {
