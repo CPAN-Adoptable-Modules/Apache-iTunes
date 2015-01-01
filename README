@@ -1,3 +1,15 @@
+=====================================================================
+             This module is looking for a maintainer!
+
+No one is maintaining this module, but you can take up its care
+and feeding by requesting CPAN persmissions from modules@perl.org.
+
+This version is assigned to the ADOPTME CPAN user and hosted in
+GitHub:
+
+	https://github.com/CPAN-Adopt-Me/apache-htaccess
+
+=====================================================================
 
 You can install this using in the usual Perl fashion
 
@@ -14,11 +26,12 @@ the file, you can read it with perldoc.
 If you want to read it before you install it, you can use
 perldoc directly on the module file.
 
-	perldoc lib/iTunes.pm
+	perldoc lib/Apache/iTunes.pm
 	
 This module is in GitHub
 
+	https://github.com/CPAN-Adopt-Me/apache-htaccess
 
 Enjoy, 
 
-brian d foy, bdfoy@cpan.org	https://github.com/CPAN-Adopt-Me/apache-htaccess
+brian d foy, bdfoy@cpan.org
